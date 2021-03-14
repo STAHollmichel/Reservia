@@ -9,25 +9,47 @@
     <script src="https://kit.fontawesome.com/ed2dfb15e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Top Menu  -->
-    <Header>
-    <!-- Logo Reservia -->
+<!-- Top Menu  -->
+<Header>
+ <!-- Logo Reservia -->
       <div>
          <img src="images/logo/Reservia.svg" alt="logo" class="logo"/>
       </div>
-      <div>
-    <!-- boutons Menu -->
-         <menu type="context" id="headermenu">
+  <!--  Menu Header -->
+      <nav class="header_menu">
              <ul>
-                 <li class="menuitem"><a href="#hebergements"><p>Hébergements</p></a></li>
-                 <li class="menuitem"><a href="#activites"><p>Activités</p></a></li>
-                 <li class="menuitem"><a href="sincre"><p>S'Inscrire</p></a></li>
+                 <li class="header_button"><a href="#hebergements"><p>Hébergements</p></a></li>
+                 <li class="header_button"><a href="#activites"><p>Activités</p></a></li>
+                 <li class="header_button"><a href="sinscricre"><p>S'Inscrire</p></a></li>
              </ul>
-         </menu>
+       </nav>
+</Header>
+<!-- Main  -->
+<main>
+<!-- Section de Recherche -->
+<section class="section_recherche"> 
+             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+             <p>En Plein centre ville ou en plein nature</p>
+ <!-- Barre de recherche -->
+      <div class="barre_recherche">
+          <div class="container">
+              <input type="text" class="input" placeholder="Marseille, France">
+              <input type="button" value="Search" class="close-btn">
+          </div>
       </div>
-    </Header>
-    <Nav>
-    </Nav>
+  <!-- Filtres -->
+      <p><strong>Filtres</strong></p>
+       <div class="filtres">
+             <ul>
+               <li class="filter_button"><a href="#economique"><p>Économique</p></a></li>
+               <li class="filter_button"><a href="#familial"><p>Familial</p></a></li>
+               <li class="filter_button"><a href="#romantique"><p>Romantique</p></a></li>
+               <li class="filter_button"><a href="#animaux_autotises"><p>Animaux autorisés</p></a></li>
+             </ul>
+       </div>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
+</section>
+
           <section>
              <aside>
              </aside>
@@ -38,6 +60,7 @@
              <aside>
              </aside>
           </section>
+</main>
     <footer>
     </footer>
 </body>
