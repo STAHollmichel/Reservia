@@ -9,19 +9,41 @@ body {
     max-width: 100%;
 }
 /* Header, logo, Nav */
-header {}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding right:50px ;
+}
 .logo {}
-nav{}
-.header_menu{}
+nav{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+.header_menu{
+   
+}
 /* Main */
-main{}
+main{
+    width:  100%;
+    height: 100%;
+    margin: 50px
+}
 /* Section de recherche */
 section{}
 .section_recherche{}
 /* SR - Barre de recherche */
-.barre_recherche{}
+.barre_recherche{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 /* SR - Filres */
-article{}
+article{
+    display: flex;
+    justify-content: left; 
+    margin-bottom: 20px;
+}
 .filtres{}
 .filter_button_1{}
 .icon_1{}
@@ -49,7 +71,14 @@ figure{}
 .boxactivites_5{}
 .boxactivites_5{}
 /* Pied de Page */
-footer{}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+
+}
 .apropos{}
 .nos_heberggements{}
 .assistance{}
