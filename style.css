@@ -11,6 +11,7 @@ body {
 /* Header, logo, Nav */
 header {
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     margin: 50px;
     padding right:50px ;
@@ -41,10 +42,11 @@ section{}
 /* SR - Filres */
 article{
     display: flex;
-    justify-content: left; 
+    align-items: left;
     margin-bottom: 20px;
 }
-.filtres{}
+.filtres{
+}
 .filter_button_1{}
 .icon_1{}
 .filter_button_2{}
@@ -53,17 +55,32 @@ article{
 .icon_3{}
 .filter_button_4{}
 .icon_4{}
+.plus500{}
 /* Section Annonces */
-.section_annonces{}
+.section_annonces{
+    margin-top: 30px;
+}
+.flexbox_1{
+    display: flexbox;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 .grid{}
 .box_annonce{}
 figure{}
 /* Section Les Plus Populaires */
-.populaires{}
+.flexbox_2{
+    display: flexbox;
+    justify-content: space-between;
+
+}
 .chart_icon{}
 .box_populaires{}
 /* Section activités à Marseille */
-.sectionactivites{}
+.flexbox_3{
+    display: flexbox;
+    justify-content: space-between;
+}
 .boxactivites_1{}
 .boxactivites_2{}
 .boxactivites_3{}
