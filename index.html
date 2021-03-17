@@ -9,17 +9,20 @@
     <script src="https://kit.fontawesome.com/ed2dfb15e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="wrapper">
 <!-- Top Menu  -->
 <Header>
 <!-- Logo Reservia -->
-     <div>
-        <img src="images/logo/Reservia.svg" alt="logo" class="logo"/>
+     <div class="logo">
+        <img src="images/logo/Reservia.svg" alt="logo">
     </div>
 <!--  Menu Header -->
-        <nav class="header_menu">
-                <a href="#hebergements"><p>Hébergements</p></a></li>
-                <a href="#activites"><p>Activités</p></a></li>
-                <a href="#sinscrire"><p>S'Inscrire</p></a></li>
+        <nav>
+            <ul class="menu_container">
+                <li class="menu_item"><a href="#hebergements">Hébergements</a></li>
+                <li class="menu_item"><a href="#activites">Activités</a></li>
+                <li class="menu_item"><a href="#sinscrire">S'Inscrire</a></li>
+            </ul>
         </nav>
 </Header>
 <!-- Main  -->
@@ -71,8 +74,8 @@
 <!-- Section Annonces -->
     <section class="section_annonces">
         <h2>Hébergements à Marseille</h2>
-            <div class="flexbox_1">
-                <div class="box_annonce">
+            <ul class="flexbox_1">
+                <li class="box_annonce">
                     <figure>
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" class="image_hebergements">
                             <figcaption>
@@ -87,8 +90,8 @@
                                         </span>
                             </figcaption>
                     </figure>
-                </div>
-                <div class="box_annonce">
+                </li>
+                <li class="box_annonce">
                     <figure>
                         <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="image_hebergements">
                             <figcaption>
@@ -103,8 +106,8 @@
                                         </span>
                             </figcaption>
                     </figure>
-                </div>
-                <div class="box_annonce">
+                </li>
+                <li class="box_annonce">
                     <figure>
                         <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" class="image_hebergements">
                             <figcaption>
@@ -119,8 +122,8 @@
                                         </span>
                             </figcaption>
                     </figure>
-                </div>
-                <div class="box_annonce">
+                </li>
+                <li class="box_annonce">
                     <figure>
                         <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" class="image_hebergements">
                             <figcaption>
@@ -135,8 +138,8 @@
                                         </span>
                         </figcaption>
                     </figure>
-                </div>
-                <div class="box_annonce">
+                </li>
+                <li class="box_annonce">
                     <figure>
                         <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" class="image_hebergements">
                             <figcaption>
@@ -151,8 +154,8 @@
                                         </span>
                         </figcaption>
                     </figure>
-                </div>
-                <div class="box_annonce">
+                </li>
+                <li class="box_annonce">
                     <figure>
                         <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"alt="Hotel chez Amina" class="image_hebergements">
                             <figcaption>
@@ -167,11 +170,11 @@
                                         </span>
                         </figcaption>
                     </figure>
-                </div>
-            </div>
+                </li>
+            </ul>
     </section>
 <!-- Section Les Plus Populaires -->
-            <aside class="flexbox_2">
+            <aside class="aside_populaires">
                 <h2>Les plus populaires</h2>
                     <span style="chart_icon">
                         <i class=" fas fa-chart-line fa-2x icon"></i>
@@ -226,7 +229,7 @@
                         </div>
             </aside>
 <!-- Section activités à Marseille -->
-    <section class="flexbox_3">
+    <section class="section_activites">
         <h2>Activités à Marseille</h2>
                 <div class="boxactivites_1">
                     <figure>
@@ -276,6 +279,7 @@
                 </div>
     </section>
 </main>
+</div>
 <!-- Pied de Page -->
     <footer>
         <div class="apropos">
