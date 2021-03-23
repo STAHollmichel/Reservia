@@ -22,24 +22,26 @@ html {
     padding-bottom: 0px;
 }
 h1 {
-    font-size: 16pt;
+    font-size: 18pt;
     letter-spacing: 1;
 }
 h2 {
-    font-size: 14pt;
+    font-size: 16pt;
 }    
 h3 {
-    font-size: 11pt;
+    font-size: 12pt;
 }
 p {
     font-size: 12pt;
     line-height: 1.8;
 }
-.fas {
-    font-size: 8pt;
+.fa-star{
+    font-size: 10pt;
+    color: #0065FC;
 }
-.far {
-    font-size: 8pt;
+#fa-star {
+    font-size: 10pt;
+    color: #F2F2F2;
 }
 /* Header, logo, Nav */
 header {
@@ -118,22 +120,22 @@ article {
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 67%; 
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;   
 }
 #aside1 h2 {
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-inline-start: 15px;
+    padding-inline-start: 25px;
 }
 .container_annonces {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0;
-    margin: auto;
+    margin-bottom: 20px;
 }
 .figure_annonces{
     width: 16.5vw;
@@ -148,37 +150,50 @@ article {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
-    height: 100px;
+    height: 110px;
     object-fit: cover;
 }
 .caption_annonces {
-    margin: 5px;
+    margin: 10px;
     display: block;
-    align-items: baseline;
+    align-items: center;
     line-break: -1;
    
 }
 .figure_annonces p {
-    font-size: 9pt;
-   
+    font-size: 10pt;
+
+}
+#plusderesultats {
+    margin margin-top: 20px;
+    padding-inline-start: 25px;
 }
 /* Section Les Plus Populaires */
-#aside_populaires {
-    display: flex;
-    flex-direction: column;
+#aside_2 {
+    display: block;
+    justify-content: space-around;
     align-items: center;
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 31%;
-    padding: 15px;
+    padding-top: 40px;
+    padding-bottom: 20x; 
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
+}
+#container_populaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .h2_icon {
     display: flex;
     justify-content: space-between;
+    padding:5px
 }
 .chart_icon {
-
+    margin-top: 5px;
 }
 .figure_populaires {
     display: flex;
@@ -229,6 +244,7 @@ footer {
     padding-bottom: 40px;
     padding-left: 50px;
     padding-right: 50px;
+    background-color: #F2F2F2;
 }
 footer h3 {
     margin-bottom: 15px;
