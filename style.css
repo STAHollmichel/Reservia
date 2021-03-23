@@ -11,9 +11,6 @@ html {
     -webkit-overflow-x: hidden;
     overflow-x: hidden;
 }
-body {
-
-}
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
@@ -28,10 +25,22 @@ h1 {
     font-size: 16pt;
     letter-spacing: 1;
 }
+h2 {
+    font-size: 14pt;
+}    
+h3 {
+    font-size: 11pt;
+}
 p {
+    font-size: 12pt;
     line-height: 1.8;
 }
-
+.fas {
+    font-size: 8pt;
+}
+.far {
+    font-size: 8pt;
+}
 /* Header, logo, Nav */
 header {
     width: 100%;
@@ -82,22 +91,42 @@ article {
 }
 .filtres {
 }
-.filter_button_1 {}
+.filter_bouton_1 {}
 .icon_1 {}
-.filter_button_2 {}
+.filter_bouton_2 {}
 .icon_2 {}
-.filter_button_3 {}
+.filter_bouton_3 {}
 .icon_3 {}
-.filter_button_4 {}
+.filter_bouton_4 {}
 .icon_4 {}
-.plus500 {}
+/* Partie info */
+.info {
+    display: flex;
+}
+.info_icon {}
+
 /* Section Annonces */
 .section_annonces {
-    padding top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+#aside1 {
+    display: block;
     background-color: #f2f2f2;
-    border-radius: 25px;
-    margin-top: 30px;
-    width: 67%;
+    border-radius: 15px;
+    width: 67%; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+#aside1 h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline-start: 15px;
 }
 .container_annonces {
     display: flex;
@@ -106,45 +135,52 @@ article {
     padding: 0;
     margin: auto;
 }
-.box_annonce {
+.figure_annonces{
     width: 16.5vw;
     height: 13vw;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 0.35em;
     margin: 10px 0 25px 0;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
 }
-.box_annonce:hover {
-    transform: scale(1.05);
-    transition: 0.4s;
-}
-figure{
-}
 .image_hebergements {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
-    height: 59%;
+    height: 100px;
     object-fit: cover;
 }
+.caption_annonces {
+    margin: 5px;
+    display: block;
+    align-items: baseline;
+    line-break: -1;
+   
+}
+.figure_annonces p {
+    font-size: 9pt;
+   
+}
 /* Section Les Plus Populaires */
-.aside_populaires {
+#aside_populaires {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f2f2f2;
-    border-radius: 25px;
+    border-radius: 15px;
     width: 31%;
-    margin-top: 2.5vw;
-    padding-bottom: 20px;
+    padding: 15px;
     position: relative;
-
+}
+.h2_icon {
+    display: flex;
+    justify-content: space-between;
 }
 .chart_icon {
 
 }
-.box_populaires {
+.figure_populaires {
     display: flex;
     justify-content: column;
     padding: 0.35em;
@@ -153,12 +189,12 @@ figure{
     margin-bottom: 20px;
     margin-top: 10px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
 }
 .image_populaires {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     width: 40%;
     height: 100%;
     -o-object-fit: cover;
@@ -169,25 +205,51 @@ figure{
     
 }
 /* Section activités à Marseille */
-.flexbox_3{
-    display: flexbox;
-    justify-content: space-between;
+
+.section_activities {
+    display: flex;
+    flex-flow: nowrap;
 }
 .boxactivites_1 {}
-.boxactivites_2 {}
+.boxactivites_2 {
+    display: flex;
+    flex-direction: column ;
+}
 .boxactivites_3 {}
-.boxactivites_4 {}
-.boxactivites_5 {}
-.boxactivites_5 {}
+.boxactivites_4 {
+    display: flex;
+    flex-direction: column ;
+}
+
 /* Pied de Page */
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    padding-top:  30px;
+    padding-bottom: 40px;
     padding-left: 50px;
     padding-right: 50px;
+}
+footer h3 {
+    margin-bottom: 15px;
+}
+footer ul {
+    padding-inline-start: 0px;
+    padding: 3px 30px 10px 0px;
+}
+footer li {
+}
+
+.apropos {
+   
     
+}
+.nos_heberggements {
+
 
 }
-.apropos {}
-.nos_heberggements {}
-.assistance {}
+.assistance {
+    padding-inline-start: 30px;
+    margin-right: 200px;
+}
+/* Media Queries */
