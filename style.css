@@ -83,7 +83,6 @@ nav a:hover {
 #active {
     border-top: solid #0065fc;
 }
-#non_active {}
 #always_active {
     color: #0065fc;
 }
@@ -100,26 +99,59 @@ main {
 }
 /* SR - Barre de recherche */
 .barre_recherche {
+    display: flex;
+    justify-content: flex-start;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+}
+.map_marker {
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+    background: #f2f2f2;
+}
+.input {
+    font-weight: 600;
+    font-size: 13pt;
+    padding-left: 10px;
+   
+
+}
+.close-btn {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 13pt;
+    padding: 10px 15px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    position: relative;
+    color: #ffffff;
+    background: #0065fc;
+
 }
 /* SR - Filres */
 article {
-    display: inline-flex;
+    display: inline-block;
     align-items: left;
     margin-bottom: 20px;
 }
 .filtres {
     display: flex;
 }
-.filter_bouton_1 {}
-.icon_1 {}
-.filter_bouton_2 {}
-.icon_2 {}
-.filter_bouton_3 {}
-.icon_3 {}
-.filter_bouton_4 {}
-.icon_4 {}
+.filter_bouton_{
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    display: inline-flex;
+}
+.info_icon {
+    border-radius: 50%;
+    color: #0065fc;
+}
 /* Partie info */
 .info {
     display: flex;
@@ -131,7 +163,7 @@ article {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-radius: 15px;
 }
 #aside1 {
@@ -238,22 +270,117 @@ article {
     
 }
 /* Section activités à Marseille */
-
-.section_activities {
-    display: flex;
-    flex-flow: nowrap;
+.section_activites {
+    display: block;
 }
-.boxactivites_1 {}
+.section_activites h2 {
+    margin-bottom: 20px;
+}
+.container_activites {
+    display: flex;
+    justify-content: space-between;
+    height: 35vw;
+}
+.boxactivites_1 { 
+    display: flex;
+    padding: 0;
+    width: 20vw;
+    height: 30vw;
+}
 .boxactivites_2 {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    width: 20vw;
+    height: 30vw;
 }
-.boxactivites_3 {}
+.boxactivites_3 {
+    display: flex;
+    padding: 0;
+    width: 20vw;
+    height: 30vw;
+}
 .boxactivites_4 {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 20vw;
+    height: 30vw;
 }
 
+.section_activites figure {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgb(230, 230, 230);
+}
+.figure_activities_a {
+    width: 20vw;
+    height: 30vw;
+    padding: 0;
+    margin: 0;
+}
+.image_activites_a {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 90%;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+.figure_activities_b {
+    width: 20vw;
+    height: 15vw;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.image_activites_b {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 80%;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+.figure_activities_c {
+    width: 20vw;
+    height: 12vw;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.image_activites_c {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 75%;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+.figure_activities_d {
+    width: 20vw;
+    height: 13.5vw;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.image_activites_d {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 78%;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+.figcaption_activities{
+    padding-inline-start: 20px ;
+}
 /* Pied de Page */
 footer {
     display: flex;
