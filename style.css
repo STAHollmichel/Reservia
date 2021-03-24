@@ -21,6 +21,7 @@ html {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+/* General style elements */
 h1 {
     font-size: 18pt;
     letter-spacing: 1;
@@ -52,24 +53,41 @@ header {
 }
 .logo {
     padding-top: 50px;
-    
 }
-.topnav {
-   overflow: hidden;
-   align-items: center;
+nav {
+    margin-right: 80px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    right: 0;
+    background-color: rgba(255,255,255, 0.9);
+    border-radius: 0px 0px 15px 15px;
 }
-.topnav a {
+
+nav a {
     float: left;
     text-align: center;
     padding: 50px 20px;
     text-decoration: none;
-    font-size: 11pt;
+    font-size: 12pt;
+    letter-spacing: 0.5px;
 }
 
+nav a:hover {
+    background: #deebff;
+    color: #0065fc;
+    border-top: solid  #0065fc;
 }
-.header_menu {
-   
+
+#active {
+    border-top: solid #0065fc;
 }
+#non_active {}
+#always_active {
+    color: #0065fc;
+}
+
 /* Main */
 main {
    
@@ -87,11 +105,12 @@ main {
 }
 /* SR - Filres */
 article {
-    display: flex;
+    display: inline-flex;
     align-items: left;
     margin-bottom: 20px;
 }
 .filtres {
+    display: flex;
 }
 .filter_bouton_1 {}
 .icon_1 {}
@@ -180,7 +199,6 @@ article {
     padding-bottom: 20x; 
     padding-left: 30px;
     padding-right: 30px;
-    position: relative;
 }
 #container_populaires {
     display: flex;

@@ -19,11 +19,9 @@
             </div>  
 <!-- Nav menu -->
             <nav>
-                <div class="topnav">
-                    <a href="#hebergements">Hébergements</a>
-                    <a href="#activites">Activités</a>
-                    <a class="active" href="#sinscrire">S'Inscrire</a>
-                </div>
+                <a id="active" href="#hebergements">Hébergements</a>
+                <a id="non_active" href="#activites">Activités</a>
+                <a id="always_active" href="#sinscrire"><strong>S'Inscrire</strong></a>
             </nav>
         </header>
 <!-- Main  -->
@@ -35,7 +33,7 @@
 <!--Barre de recherche -->
                 <div class="barre_recherche">
                     <span class="mapmarker"><i class="fas fa-map-marker-alt icone localisation"></i>
-                    <input type="text" class="input" placeholder="Marseille, France">
+                    <input type="text" placeholder="Marseille, France" class="input">
                     <input type="button" value="Search" class="close-btn">
                 </div>
 <!-- Filtres -->
