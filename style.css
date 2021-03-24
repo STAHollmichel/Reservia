@@ -21,7 +21,9 @@ html {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
 /* General style elements */
+
 h1 {
     font-size: 18pt;
     letter-spacing: 1;
@@ -42,9 +44,11 @@ p {
 }
 #fa-star {
     font-size: 10pt;
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
+
 /* Header, logo, Nav */
+
 header {
     width: 100%;
     display: flex;
@@ -64,7 +68,6 @@ nav {
     background-color: rgba(255,255,255, 0.9);
     border-radius: 0px 0px 15px 15px;
 }
-
 nav a {
     float: left;
     text-align: center;
@@ -74,34 +77,49 @@ nav a {
     letter-spacing: 0.5px;
 }
 
-nav a:hover {
+
+#active {
+    border-top: solid #0065fc;
+}
+#active:hover {
+    background: #deebff;
+    color: #0065fc;
+    border-top: solid  #0065fc;
+}
+#non_active {
+    border-top: solid rgba(255,255,255, 0.9) ;
+}
+#non_active:hover {
+    background: #deebff;
+    color: #0065fc;
+    border-top: solid  #0065fc;
+}
+#always_active {
+    color: #0065fc; 
+    border-top: solid rgba(255,255,255, 0.9) ;
+}
+#always_active:hover {
     background: #deebff;
     color: #0065fc;
     border-top: solid  #0065fc;
 }
 
-#active {
-    border-top: solid #0065fc;
-}
-#always_active {
-    color: #0065fc;
-}
-
 /* Main */
-main {
-   
 
-}
+main {}
+
 /* Section de recherche */
-.section_recherche {
-    padding-top: 30px;
 
+.section_recherche {
+    padding-top: 30px
 }
+
 /* SR - Barre de recherche */
+
 .barre_recherche {
     display: flex;
     justify-content: flex-start;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px; 
 }
 .map_marker {
@@ -114,11 +132,12 @@ main {
     background: #f2f2f2;
 }
 .input {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 13pt;
     padding-left: 10px;
-   
-
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f2f2f2;
 }
 .close-btn {
     padding: 10px;
@@ -130,21 +149,56 @@ main {
     position: relative;
     color: #ffffff;
     background: #0065fc;
-
 }
+
 /* SR - Filres */
 article {
-    display: inline-block;
-    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
-.filtres {
-    display: flex;
+article h2 {
+    float: left;
+    margin: 1vw 1.5vw 2.2vw 0vw;
+    font-size: 15pt;
 }
-.filter_bouton_{
+.filter_container {
     display: flex;
     justify-content: space-between;
 }
+.filter_button { 
+    display: flex;
+    justify-content: space-between;
+    margin: 0vw 1vw -1vw -1vw;
+}
+#fas_filter {
+    color: #0065fc;
+}
+.filter_button i {
+    background: #deebff;
+    color: #0065fc;
+    width: 3.39vw;
+    height: 3.39vw;
+    border-radius: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 2vw;
+    bottom: 0px;
+}
+.filter_button p > a {
+    padding: 0.59vw 1.6vw 0.63vw 0.3vw;
+    padding-left: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #d9d9d9;
+    border-radius: 0 2.4rem 2.4rem 0;
+    font-weight: 700;
+}    
 .info {
     display: inline-flex;
 }
@@ -152,13 +206,24 @@ article {
     border-radius: 50%;
     color: #0065fc;
 }
+
 /* Partie info */
+
 .info {
     display: flex;
 }
-.info_icon {}
+.info_icon {
+    float: left;
+    margin-right: 12px;
+    font-size: 0.8em;
+    border: solid #f2f2f2 2px;
+    border-radius: 50%;
+    color: #0065fc;
+    padding: 0.4em 0.85em;
+}
 
 /* Section Annonces */
+
 .section_annonces {
     display: flex;
     justify-content: space-between;
@@ -219,7 +284,9 @@ article {
     margin margin-top: 20px;
     padding-inline-start: 25px;
 }
+
 /* Section Les Plus Populaires */
+
 #aside_2 {
     display: block;
     justify-content: space-around;
@@ -269,7 +336,9 @@ article {
     margin-right: 0.8vw;
     
 }
+
 /* Section activités à Marseille */
+
 .section_activites {
     display: block;
 }
@@ -310,7 +379,6 @@ article {
     width: 20vw;
     height: 30vw;
 }
-
 .section_activites figure {
     background-color: white;
     border-radius: 20px;
@@ -381,7 +449,9 @@ article {
 .figcaption_activities{
     padding-inline-start: 20px ;
 }
+
 /* Pied de Page */
+
 footer {
     display: flex;
     justify-content:space-between;
@@ -414,4 +484,5 @@ footer li {
     padding-inline-start: 30px;
     margin-right: 300px;
 }
+
 /* Media Queries */
