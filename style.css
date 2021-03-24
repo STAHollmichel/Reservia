@@ -399,6 +399,7 @@ footer ul {
     padding: 3px 30px 10px 0px;
 }
 footer li {
+    line-height: 1.8;
 }
 
 .apropos {
@@ -411,6 +412,6 @@ footer li {
 }
 .assistance {
     padding-inline-start: 30px;
-    margin-right: 200px;
+    margin-right: 300px;
 }
 /* Media Queries */
