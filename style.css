@@ -14,7 +14,6 @@ html {
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
-    
     width:  100%;
     height: 100%;
     padding: 50px;
@@ -77,6 +76,7 @@ nav a {
     letter-spacing: 0.5px;
 }
 
+/* --nav activations-- */
 
 #active {
     border-top: solid #0065fc;
@@ -114,7 +114,7 @@ main {}
     padding-top: 30px
 }
 
-/* SR - Barre de recherche */
+/* --SR - Barre de recherche-- */
 
 .barre_recherche {
     display: flex;
@@ -149,27 +149,34 @@ main {}
     position: relative;
     color: #ffffff;
     background: #0065fc;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color:#000000;
 }
 
-/* SR - Filres */
+/* --SR - Filres-- */
 article {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 article h2 {
     float: left;
-    margin: 1vw 1.5vw 2.2vw 0vw;
+    margin: 1vw 1.5vw 0vw 0vw;
     font-size: 15pt;
 }
 .filter_container {
-    display: flex;
-    justify-content: space-between;
+    display: flex;  
 }
 .filter_button { 
     display: flex;
-    justify-content: space-between;
     margin: 0vw 1vw -1vw -1vw;
+}
+.filter_button:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 #fas_filter {
     color: #0065fc;
@@ -198,7 +205,11 @@ article h2 {
     border-color:  #d9d9d9;
     border-radius: 0 2.4rem 2.4rem 0;
     font-weight: 700;
-}    
+    color: #000000;
+}   
+.filter_button p > a:hover {
+    color: #0065FC;
+} 
 .info {
     display: inline-flex;
 }
@@ -261,7 +272,12 @@ article h2 {
     padding: 0.35em;
     margin: 10px 0 25px 0;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
+    cursor: pointer;
 }
+.figure_annonces:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}    
 .image_hebergements {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -273,16 +289,19 @@ article h2 {
     margin: 10px;
     display: block;
     align-items: center;
-    line-break: -1;
-   
+    line-break: -1;  
 }
 .figure_annonces p {
     font-size: 10pt;
-
 }
+/* --Afficher Plus--*/
 #plusderesultats {
     margin margin-top: 20px;
     padding-inline-start: 25px;
+    color: #000000;
+}
+#plusderesultats:hover {
+    color:#0065FC;
 }
 
 /* Section Les Plus Populaires */
@@ -323,6 +342,11 @@ article h2 {
     background-color: white;
     border-radius: 15px;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
+    cursor: pointer;
+}
+.figure_populaires:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 .image_populaires {
     border-top-left-radius: 10px;
@@ -333,8 +357,7 @@ article h2 {
     object-fit: cover;
     float: left;
     padding-right: 10px;
-    margin-right: 0.8vw;
-    
+    margin-right: 0.8vw;   
 }
 
 /* Section activités à Marseille */
@@ -349,6 +372,11 @@ article h2 {
     display: flex;
     justify-content: space-between;
     height: 35vw;
+    cursor: pointer;
+}
+.container_activites figure:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 .boxactivites_1 { 
     display: flex;
@@ -449,7 +477,6 @@ article h2 {
 .figcaption_activities{
     padding-inline-start: 20px ;
 }
-
 /* Pied de Page */
 
 footer {
@@ -468,21 +495,19 @@ footer ul {
     padding-inline-start: 0px;
     padding: 3px 30px 10px 0px;
 }
-footer li {
+footer li > a {
     line-height: 1.8;
+    color: #000000;
 }
-
-.apropos {
-   
-    
-}
-.nos_heberggements {
-
-
-}
+.apropos {}
+.nos_hebergements {}
 .assistance {
     padding-inline-start: 30px;
     margin-right: 300px;
 }
-
+.apropos ul li:hover,
+.nos_hebergements ul li:hover,
+.assistance ul li:hover {
+    -webkit-text-stroke: 1px #000000;
+}
 /* Media Queries */
