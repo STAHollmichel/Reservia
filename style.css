@@ -46,7 +46,9 @@ p {
     font-size: 10pt;
     color: #d9d9d9;
 }
-
+figcaption {
+    color:#000000;
+}
 /* Header, logo, Nav */
 
 header {
@@ -75,6 +77,7 @@ nav a {
     text-decoration: none;
     font-size: 12pt;
     letter-spacing: 0.5px;
+    color: #000000;
 }
 
 /* --nav activations-- */
@@ -273,7 +276,6 @@ article h2 {
     padding: 0.35em;
     margin: 10px 0 25px 0;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
-    cursor: pointer;
 }
 .figure_annonces:hover {
     transform: scale(1.05);
@@ -342,7 +344,6 @@ article h2 {
     background-color: white;
     border-radius: 15px;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
-    cursor: pointer;
 }
 .figure_populaires:hover {
     transform: scale(1.05);
@@ -372,7 +373,6 @@ article h2 {
     display: flex;
     justify-content: space-between;
     height: 35vw;
-    cursor: pointer;
 }
 .container_activites figure:hover {
     transform: scale(1.05);
@@ -512,4 +512,15 @@ footer li > a {
 }
 /* Media Queries */
 
+/* --Desktop:--*/
+
+@media only screen and (max-width: 768px) {
+    .section_recherche {width: 60%;}
+    .barre_recherche {width: 50px;}
+    article {width: 30%;}
+    .filter_container {width: 20%;}   
+}
+
 /* --Iphone X--*/
+@media only screen and (min-width: 375px) {
+    
