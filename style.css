@@ -12,7 +12,7 @@ html {
     overflow-x: hidden;
 }
 .wrapper {
-    display: flex;  
+    display: flex;
     flex-flow: row wrap;
     width:  100%;
     height: 100%;
@@ -29,7 +29,7 @@ h1 {
 }
 h2 {
     font-size: 16pt;
-}    
+}
 h3 {
     font-size: 12pt;
 }
@@ -37,11 +37,12 @@ p {
     font-size: 12pt;
     line-height: 1.8;
 }
-.fa-star{
+/* --Star Rating--*/
+.blue{
     font-size: 10pt;
     color: #0065FC;
 }
-#fa-star {
+.grey {
     font-size: 10pt;
     color: #d9d9d9;
 }
@@ -95,7 +96,7 @@ nav a {
     border-top: solid  #0065fc;
 }
 #always_active {
-    color: #0065fc; 
+    color: #0065fc;
     border-top: solid rgba(255,255,255, 0.9) ;
 }
 #always_active:hover {
@@ -120,7 +121,7 @@ main {}
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 .map_marker {
     min-width: 50px;
@@ -168,9 +169,9 @@ article h2 {
     font-size: 15pt;
 }
 .filter_container {
-    display: flex;  
+    display: flex;
 }
-.filter_button { 
+.filter_button {
     display: flex;
     margin: 0vw 1vw -1vw -1vw;
 }
@@ -178,7 +179,7 @@ article h2 {
     transform: scale(1.05);
     transition: 0.4s;
 }
-#fas_filter {
+.fas_filter {
     color: #0065fc;
 }
 .filter_button i {
@@ -206,10 +207,10 @@ article h2 {
     border-radius: 0 2.4rem 2.4rem 0;
     font-weight: 700;
     color: #000000;
-}   
+}
 .filter_button p > a:hover {
     color: #0065FC;
-} 
+}
 .info {
     display: inline-flex;
 }
@@ -246,11 +247,11 @@ article h2 {
     display: block;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 67%; 
+    width: 67%;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 10px;
-    padding-right: 10px;   
+    padding-right: 10px;
 }
 #aside1 h2 {
     padding-top: 5px;
@@ -277,7 +278,7 @@ article h2 {
 .figure_annonces:hover {
     transform: scale(1.05);
     transition: 0.4s;
-}    
+}
 .image_hebergements {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -289,7 +290,7 @@ article h2 {
     margin: 10px;
     display: block;
     align-items: center;
-    line-break: -1;  
+    line-break: -1;
 }
 .figure_annonces p {
     font-size: 10pt;
@@ -314,7 +315,7 @@ article h2 {
     border-radius: 15px;
     width: 31%;
     padding-top: 40px;
-    padding-bottom: 20x; 
+    padding-bottom: 20x;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -357,7 +358,7 @@ article h2 {
     object-fit: cover;
     float: left;
     padding-right: 10px;
-    margin-right: 0.8vw;   
+    margin-right: 0.8vw;
 }
 
 /* Section activités à Marseille */
@@ -378,7 +379,7 @@ article h2 {
     transform: scale(1.05);
     transition: 0.4s;
 }
-.boxactivites_1 { 
+.boxactivites_1 {
     display: flex;
     padding: 0;
     width: 20vw;
@@ -511,3 +512,5 @@ footer li > a {
     -webkit-text-stroke: 1px #000000;
 }
 /* Media Queries */
+
+/* --Iphone X--*/
