@@ -165,7 +165,7 @@ article {
     margin-bottom: 40px;
 }
 article h2 {
-    padding-top: 0.5vw;
+    padding-top: 0.8vw;
     font-size: 15pt;
 }
 .filter_container {
@@ -238,13 +238,13 @@ article h2 {
     padding: 0.4em 0.85em;
 }
 
-/* Section Annonces */
+/* Section Hebergements */
 
-.section_annonces {
+#section_hebergements {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-radius: 15px;
 }
 #aside1 {
@@ -262,14 +262,14 @@ article h2 {
     padding-bottom: 5px;
     padding-left: 25px;
 }
-.container_annonces {
+.container_hebergements {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0;
     margin-bottom: 20px;
 }
-.figure_annonces{
+.figure_hebergements{
     width: 16.5vw;
     height: 13vw;
     background-color: white;
@@ -278,7 +278,7 @@ article h2 {
     margin: 10px 0 25px 0;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
 }
-.figure_annonces:hover {
+.figure_hebergements:hover {
     transform: scale(1.05);
     transition: 0.4s;
 }
@@ -289,12 +289,12 @@ article h2 {
     height: 110px;
     object-fit: cover;
 }
-.caption_annonces {
+.caption_hebergements {
     margin: 10px;
     display: block;
     align-items: center;
 }
-.figure_annonces p {
+.figure_hebergements p {
     font-size: 10pt;
 }
 /* --Afficher Plus--*/
@@ -368,10 +368,12 @@ article h2 {
 
 /* Section activités à Marseille */
 
-.section_activites {
+#section_activites {
+    padding-top: 20px;
     display: block;
+
 }
-.section_activites h2 {
+#section_activites h2 {
     margin-bottom: 20px;
 }
 .container_activites {
