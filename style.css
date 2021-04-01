@@ -37,6 +37,9 @@ p {
     font-size: 12pt;
     line-height: 1.8;
 }
+.marker {
+    font-size: 14pt;
+}
 /* --Star Rating--*/
 .blue{
     font-size: 10pt;
@@ -197,6 +200,7 @@ article h2 {
     border-right: solid #d9d9d9 2px;
     border-bottom: solid #d9d9d9 2px;
     border-radius: 2.5vw;
+    margin-bottom: 2vw;
 }
 .filter_button:hover {
     transform: scale(1.05);
@@ -527,34 +531,63 @@ footer li > a {
 }
 /* Media Queries */
 
-/* --Search button-- */~
-@media screen and (min-width:375px) and (max-width:5000px) {
+/* --Search button-- */
+@media only screen and (min-width:500px) and (max-width: 5000px) {
     #searchbutton {
-        color: transparent;
         background-color: transparent;
+        color: transparent;
     }
 }
-/* --Desktop-- */
-/* //Breakpoint 1// */
+/* --Laptop L-- */
 
-/* //Breakpoint 2// */
-@media only screen and (max-width:1200px) {
-        /* --SR - Filres-- */
-    .icon_back {width: 4vw;
-                height:4vw}
-    article h2 {padding-top: 1vw;
+@media only screen and (min-width:1024px) and (max-width: 1440px) {
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        font-family:'Raleway', sans-serif;
     }
-                
-    .filter_button i {width: 4vw;
-                      height: 4vw;}
-    .filter_button p {padding: 0.8vw 1.2vw 0.8vw 1.2vw;
+    html {
+        max-width: 100%;
+        -webkit-overflow-x: hidden;
+        overflow-x: hidden;
+    }
+
+/* --Laptop-- */
+}
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    
+    .blue {font-size: 7pt;}
+    .grey {font-size: 7pt;}
+    }
+        /* --SR - Filres-- */
+    .icon_back {
+        width: 5vw;
+        height:5vw
+    }
+    article h2 { padding-top: 1.4vw;
+    }
+    .filter_container {
+        flex-wrap: wrap;
+    }
+    .filter_button i {width: 5vw;
+                      height: 5vw;}
+    .filter_button p {padding: 1vw 1.2vw 0.8vw 1.2vw;
                       font-weight: 700;
                     font-size: 12pt;}
+    
         /* --Partie info-- */
     .info p {padding-top:7px;} 
+
         /* Section Hebergements */
-    .image_hebergements {height:90px}
+    .image_hebergements {height:70px}
     .caption_hebergements {margin: 0px;}
+    .caption_hebergements h3 {font-size: 9pt;}
+    .caption_hebergements p {
+        font-size: 8pt;
+        line-height: 1;                   
+    }
         /* Section Les Plus Populaires */
     .caption_populaires {padding-top: 0px;
                       padding-bottom: 0px;}
@@ -563,7 +596,7 @@ footer li > a {
 }
 
 /* //Breakpoint 3// */
-@media only screen and (max-width:992px) {
+@media only screen and (max-width: 992px) {
 
 }
 /* --Tablet:--*/
@@ -647,7 +680,12 @@ footer li > a {
     .fas_filter {
         font-size: 14pt;
     }
-
+    .marker {
+        font-size: 14pt;
+    }
+    .loupe {
+        font-size: 12pt;
+    }
     /* Header */
     header {
         display: flex;
@@ -711,8 +749,11 @@ footer li > a {
         margin-top: 0px;
         padding: 30px 20px 0px 20px
     }
-    .searchbutton {
-        display: none;
+    .input {
+        width: 250px;
+    }
+    .close-btn {
+        display:none;
     }
 
         /* --SR - Filres-- */
