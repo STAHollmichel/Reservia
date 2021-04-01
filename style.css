@@ -54,24 +54,26 @@ figcaption {
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
 }
 .logo {
-    padding-top: 50px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    background-color: rgba(255,255,255, 0.9);
+    border-radius: 15px;
+
 }
 nav {
+    float: right;
     margin-right: 80px;
     overflow: hidden;
     align-items: center;
-    position: relative;
-    position: fixed;
     right: 0;
     background-color: rgba(255,255,255, 0.9);
     border-radius: 0px 0px 15px 15px;
 }
 nav a {
-    float: left;
+    float: right;
     text-align: center;
     padding: 50px 20px;
     text-decoration: none;
@@ -115,6 +117,7 @@ main {}
 /* Section de recherche */
 
 .section_recherche {
+    margin-top: 0px;
     padding-top: 30px
 }
 
@@ -600,9 +603,8 @@ footer li > a {
 }
     /* //Iphone X//*/
 
-@media only screen and (min-width: 375px) {
-    * {margin: 0;
-       box-sizing: border-box;}
+@media only screen and (min-width: 375px) and (max-width:500px) {
+    * {margin: 0;}
     html {max-width: 100%;
         -webkit-overflow-x: hidden;
                 overflow-x: hidden;}
@@ -649,9 +651,16 @@ footer li > a {
     /* Header */
     header {
         display: flex;
-        flex-wrap:wrap;}
+        flex-wrap:wrap;
+        position: initial;
+        }
     .logo {
-        padding: 20px 20px 0px 20px;
+        left: 15px;
+        top: 15px;
+        position: absolute;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
         /* --Nav-- */
@@ -659,10 +668,10 @@ footer li > a {
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: flex-end;
+        margin-top: 15px;
         margin-right: 0px;
         border-radius: 0;
         background-color:rgba(255,255,255, 0);
-        padding-top: 20px;
     }
     nav a {padding: 15px 25px}
 
@@ -672,20 +681,22 @@ footer li > a {
         border-top: none;
         border-bottom: solid #0065fc;
         background-color:rgba(255,255,255, 0.9);
-        border-top-left-radius: 25px;
+    }
+    #active:hover {
+        background: #deebff;
+        color: #0065fc;
+        border-top: solid  #0065fc;
     }
     #non_active {
-        flex-grow: 5;
+        flex-grow: 16;
         border-top: none;
         border-bottom: solid rgba(255,255,255, 0.9);
-        background-color:rgba(255,255,255, 0.9);
     }
     #always_active {
         margin left: 50px;
         border-top: none;
         border-bottom: solid rgba(255,255,255, 0.9);
         background-color:rgba(255,255,255, 0.9);
-        border-top-left-radius: 25px;
     }
 
     /* Main */
@@ -696,7 +707,13 @@ footer li > a {
         margin: 0;}
 
     /* Section de recherche */
-    .section_recherche {padding: 70px 20px 0px 20px}
+    .section_recherche {
+        margin-top: 0px;
+        padding: 30px 20px 0px 20px
+    }
+    .searchbutton {
+        display: none;
+    }
 
         /* --SR - Filres-- */
     article {
@@ -753,7 +770,7 @@ footer li > a {
     }
     #container_populaires {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         padding: 5px; 
     }
@@ -792,6 +809,7 @@ footer li > a {
     .container_hebergements {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .figure_hebergements {
         width: 345px;
@@ -829,7 +847,7 @@ footer li > a {
     .boxactivites_1 {
         width: 355px;
         height: 200px;
-        margin-bottom: 10px;
+        margin-bottom: 19px;
     }
     .figure_activities_a {
         width: 355px;
@@ -841,7 +859,6 @@ footer li > a {
         height: 150px;
     }
     .boxactivites_2 {
-        justify-content: space-around;
         width: 355px;
         height: 420px;
     }
@@ -852,11 +869,12 @@ footer li > a {
     }
     .image_activites_b {
         width: 355px;
-        height: 150px;
+        height: 140px;
     }
     .boxactivites_3 {
         width: 355px;
         height: 200px;
+        margin-bottom: 19px;
     }
     .figure_activities_c {
         width: 355px;
@@ -865,18 +883,18 @@ footer li > a {
     }
     .image_activites_c {
         width: 355px;
-        height: 150px;
+        height: 140px;
     }
     .boxactivites_4 {
-        justify-content: space-around;
         width: 355px;
         height: 420px;
+        
     }
     .image_activites_d {
         width: 355px;
-        height: 150px;
+        height: 140px;
     }
-    .figure_activities_b {
+    .figure_activities_d {
         width: 355px;
         height: 190px;
         margin-bottom: 20px;
@@ -886,5 +904,9 @@ footer li > a {
         display: flex;
         flex-direction: column;
         padding-bottom: 10px;
+        padding-left: 30px;
     }
+    .assistance {
+        padding-left: 0px;
+        margin-right: 0px;
 }
