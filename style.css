@@ -307,10 +307,10 @@ figcaption {
     .caption_hebergements {
         display: block;
         align-items: center;
+        line-height: 1.4;
+        padding:1px;
     }
-    .figure_hebergements p {
-        font-size: 1.1em;
-    }
+    .figure_hebergements p {}
     /* --Afficher Plus--*/
     
     #plusderesultats {
@@ -369,7 +369,6 @@ figcaption {
         -o-object-fit: cover;
         object-fit: cover;
         float: left;
-        padding-right: 10px;
         margin-right: 0.8vw;
     }
     .caption_populaires {
@@ -753,7 +752,7 @@ figcaption {
     .filter_button p {font-weight: 600; font-size: 2.35vw; padding: 1vmax 1.6vmax 0.9vmax 1.6vmax;}
     .fas_filter {font-size: 2vw;}
     .info_icon {font-size: 2vw; border: solid #f2f2f2 1px;}
-    .info p {line-height: 2.6;}
+    .info p {line-height: 1.6}
     #section_hebergements {flex-flow: column-reverse; align-items: center;}
     #aside_2 {padding: 20px 10px 10px 10px; width:100%;}
     .chart_icon {margin-top: 5px; font-size: 2vw;}
