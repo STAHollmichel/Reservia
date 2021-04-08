@@ -175,7 +175,7 @@ figcaption {
         border-radius: 15px;
         border: none;
         position: absolute;
-        left: 19em;
+        left: 50vmax;
         cursor: pointer;
         
     }
@@ -790,13 +790,13 @@ figcaption {
 
 @media screen and (max-width: 424px) and (min-width: 375px) {
     .wrapper{display: flex; flex-direction: column; padding:0px}
-    h1 {font-size: 12pt; letter-spacing: 0.5px;}
-    h2 {font-size: 13pt;}
-    h3 {font-size: 12pt;}
-    p {font-size: 10pt; line-height: 2.2;}
+    h1 {font-size: 5.5vw; letter-spacing: 0.5px;}
+    h2 {font-size: 4.5vw;}
+    h3 {font-size: 4vw;}
+    p {font-size: 3.8vw; line-height: 2.2;}
     .fas {font-weight: 500 ;}
-    .blue{font-size: 8pt; color: #0065FC;}
-    .grey {font-size: 8pt; color: #d9d9d9;}
+    .blue{font-size: 3vw; color: #0065FC;}
+    .grey {font-size: 3vw; color: #d9d9d9;}
     .fas_filter {font-size: 14pt;}
     .marker {font-size: 14pt;}
     .loupe {font-size: 12pt;}
@@ -804,16 +804,18 @@ figcaption {
     .logo {left: 15px; top: 15px; position: absolute; padding: 0px; margin-top: 0px; margin-bottom: 0px;}
     nav {display: flex; flex-wrap: wrap-reverse; justify-content: flex-end;margin-top: 15px; margin-right: 0px; border-radius: 0; background-color:rgba(255,255,255, 0);}
     nav a {padding: 15px 25px}
-    #active {flex-grow: 2;border-top: none; border-bottom: solid #0065fc; background-color:rgba(255,255,255, 0.9);}
-    #active:hover {background: #deebff; color: #0065fc; border-top: solid  #0065fc;}
-    #non_active {flex-grow: 16; border-top: none; border-bottom: solid rgba(255,255,255, 0.9);}
-    #always_active {border-top: none; border-bottom: solid rgba(255,255,255, 0.9); background-color:rgba(255,255,255, 0.9); }
-    main { padding: 0px; flex-direction: column; width: 100%; margin: 0;}
+    #active {flex-grow: 2;border-top: solid #ffffff; border-bottom: solid #0065fc; background-color:#ffffff);}
+    #active:hover {background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid #0065fc;}
+    #non_active {flex-grow: 16; border-top: solid #ffffff; border-bottom: solid #ffffff);}
+    #non_active:hover{background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid  #0065fc;}
+    #always_active {border-top: solid #ffffff; border-bottom: solid #ffffff); background-color: #ffffff); }
+    #always_active:hover{background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid  #0065fc;}
+    main {padding: 0px; flex-direction: column; width: 100%; margin: 0;}
     .section_recherche {margin-top: 0px; padding: 30px 20px 0px 20px}
     .input {width: 250px;}
     .close-btn {display:none;}
     article {display: flex; flex-direction: column;}
-    .filter_container {display: flex;flex-wrap: wrap; padding:0} 
+    .filter_container {display: flex;flex-wrap: wrap; padding: 0; margin-top: 10px;} 
     .filter_button { margin-right: 0vw; border-width: 2px; border-radius: 15vw; margin: 5px}
     .icon_back {background-color: #deebff; width: 12.5vw; height: 12.5vw; border-radius: 50%;}
     .icon_back i { width: 12.5vw; height: 12.5vw; display: flex; justify-content: center; align-items: center; }
@@ -826,13 +828,14 @@ figcaption {
     #container_populaires { display: flex; align-items: center; flex-wrap: wrap; padding: 5px;}
     #container_populaires a {flex-basis : 80%;}
     .figure_populaires {flex-basis : 80%; width: 345px; height: 160px;}
-    .image_populaires {width: 50%; padding-right: 10px; margin-right: 1vw;}
+    .image_populaires {width: 155px; padding-right: 10px; margin-right: 1vw;}
     .caption_populaires {padding:5px}
     .etoiles_populaires {margin-top: 48px;}
     #etoiles_populaires {margin-top: 48px;}
     #aside_1 { background-color: #ffffff; border-radius: 0px; width: 100%; padding-top: 30px; padding-bottom: 20px;}
     #aside_1 h2 {font-size: 15pt;padding-left: 5px; padding-bottom: 15px;}.container_hebergements {display: flex;flex-direction: column; align-items: center;}
     .figure_hebergements {width: 345px; height: 200px;}
+    .caption_hebergements {padding: 5px; line-height: 0.8;}
     .image_hebergements {height:110px}
     #plusderesultats {padding-left: 5px;}
     #section_activites {display: flex; flex-direction: column;height: auto;padding-top: 0px;}
