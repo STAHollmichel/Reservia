@@ -113,8 +113,6 @@ figcaption {
     
     /* Main */
     
-    main {}
-    
     /* Section de recherche */
     
     .section_recherche {
@@ -387,7 +385,6 @@ figcaption {
     #section_activites {
         padding-top: 20px;
         display: block;
-    
     }
     #section_activites h2 {
         margin-bottom: 20px;
@@ -522,8 +519,6 @@ figcaption {
         line-height: 1.8;
         color: #000000;
     }
-    .apropos {}
-    .nos_hebergements {}
     .assistance {
         padding-left: 30px;
         margin-right: 300px;
@@ -584,8 +579,6 @@ figcaption {
     .grey {font-size: 0.9vw ;}
     .figure_hebergements {height: 13.2vw;}
     .figure_hebergements p {font-size: 1.1vw;}
-    .image_hebergements {}
-    figcaption p {}
 }   
 
 /* //Laptop M// */
@@ -675,15 +668,13 @@ figcaption {
     .wrapper {padding: 0px 30px;}
     .logo {margin-bottom: 0px;}
     nav {margin-right: 5px;}
-    nav a {font-size: 1.7vw;
-        padding: 56.5px 15px 50px 15px}
+    nav a {font-size: 1.7vw; padding: 56.5px 15px 50px 15px}
     .section_recherche {padding-top: 0px;}
     article {margin-bottom: 10px;}
     .input {font-size: 1.75vw;}
     .close-btn {font-size: 1.75vw;}
     article h2 {padding-top: 1.3vw;}
-    .filter_button i { width: 4vmax;
-                      height: 4vmax;}
+    .filter_button i { width: 4vmax; height: 4vmax;}
     .filter_button p {font-size: 1.5vw;}
     .info p {line-height: 2.6;}
     #section_hebergements {flex-flow: column-reverse; align-items: center}
@@ -840,11 +831,11 @@ figcaption {
     .logo {left: 15px; top: 15px; position: absolute; padding: 0px; margin-top: 0px; margin-bottom: 0px;}
     nav {display: flex; flex-wrap: wrap-reverse; justify-content: flex-end;margin-top: 15px; margin-right: 15px; border-radius: 0; background-color:rgba(255,255,255, 0);}
     nav a {padding: 15px 25px}
-    #active {flex-grow: 2;border-top: solid #ffffff; border-bottom: solid #0065fc; background-color:#ffffff);}
+    #active {flex-grow: 2;border-top: solid #ffffff; border-bottom: solid #0065fc; background-color:#ffffff;}
     #active:hover {background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid #0065fc;}
-    #non_active {flex-grow: 14; border-top: solid #ffffff; border-bottom: solid #ffffff);}
+    #non_active {flex-grow: 14; border-top: solid #ffffff; border-bottom: solid #ffffff;}
     #non_active:hover{background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid  #0065fc;}
-    #always_active {border-top: solid #ffffff; border-bottom: solid #ffffff); background-color: #ffffff); }
+    #always_active {border-top: solid #ffffff; border-bottom: solid #ffffff; background-color: #ffffff;}
     #always_active:hover{background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid  #0065fc;}
     main {padding: 0px; flex-direction: column; width: 100%; margin: 0;}
     .section_recherche {margin-top: 0px; padding: 30px 20px 0px 20px}
