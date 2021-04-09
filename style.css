@@ -534,21 +534,21 @@ figcaption {
 
 /* //Laptop 4K// */
 
-@media screen and (min-width: 1441px) {
-    h1 {font-size: 2.5em}
-    h2 {font-size: 1.4vw;}
-    h3 {font-size: 1.3vw;}
-    p {font-size: 1.2vw;}
+@media screen and (min-width: 1920px) {
+    h1 {font-size: 2em}
+    h2 {font-size: 1.6em;}
+    h3 {font-size: 1.4em;}
+    p {font-size: 1.4em;}
     .marker {font-size: 1.2vw;}
     .blue {font-size: 0.85vw ;}
     .grey {font-size: 0.85vw ;}
     .wrapper {padding: 0px 60px;}
-    .logo img { width: 200px;}
+    .logo img { width: 150px;}
     nav {margin-right: 0px;}
-    nav a {font-size: 2em; padding: 56.5px 50px 50px 20px;}
+    nav a {font-size: 1.5em; padding: 56.5px 50px 50px 20px;}
     .barre_recherche {margin-top: 30px;}
-    .input {font-size: 2.2em; font-weight: 800;}
-    .close-btn {font-size: 2.2em; font-weight: 700;}
+    .input {font-size: 1.4em; font-weight: 800;}
+    .close-btn {font-size: 1.4em; font-weight: 700;}
     .filter_container {; padding-left: 40px;}
     .fas_filter {font-size: 1.5vw;}
     .info_icon {font-size: 1.5vw;}
@@ -567,8 +567,48 @@ figcaption {
     footer li > a {font-size: 1.2vw; font-weight:500;}
     .assistance {padding-left: 10px; margin-right: 600px;}
 }
-
-/*//Laptop M/L// */
+/* //Laptop XL//*/
+@media screen and (max-width:1919px) and (min-width: 1441px) {
+    
+    h1 {font-size: 1.7em}
+    h2 {font-size: 1.4em;}
+    h3 {font-size: 1.3em;}
+    p {font-size: 1.3em;}
+    .marker {font-size: 1.2vw;}
+    .blue {font-size: 0.85vw ;}
+    .grey {font-size: 0.85vw ;}
+    .wrapper {padding: 0px 60px;}
+    .logo img {width: 130px;}
+    nav {margin-right: 0px;}
+    nav a {font-size: 1.35em; padding: 56.5px 30px 50px 20px;}
+    .barre_recherche {margin-top: 30px;}
+    .input {font-size: 1.2em; font-weight: 800;}
+    .close-btn {font-size: 1.2em; font-weight: 700;}
+    .filter_container {; padding-left: 40px;}
+    .fas_filter {font-size: 1.3vw;}
+    .info_icon {font-size: 1.3vw;}
+    .info p {line-height: 2.3}
+    article {margin-top:30px;}
+    #aside_1 {border-radius: 20px;}
+    .container_hebergements {padding-top: 30px;}
+    .image_hebergements {border-top-left-radius: 20px; border-top-right-radius: 20px; height: 8vw;}
+    .caption_hebergements {line-height: 1;}
+    .caption_hebergements h3 {font-size: 1.2em;}
+    .caption_hebergements p {font-size: 1.2em;}
+    #aside_2 {border-radius: 20px;}
+    #container_populaires {padding-top: 30px;}
+    .chart_icon {margin-top: 5px; font-size: 1vw;}
+    .figure_populaires {border-radius: 20px;}
+    .image_populaires { border-top-left-radius: 20px; border-bottom-left-radius: 20px; padding-right: 10px;}
+    .caption_populaires {padding-left: 5px; line-height: 1;}
+    .caption_populaires h3 {font-size: 1.2em;}
+    .caption_populaires p {font-size: 1.2em;}
+    .figcaption_activities {padding-left: 40px;}
+    .figcaption_activities p {font-size: 1em;}
+    footer li > a {font-size: 1.2vw; font-weight:500;}
+    .assistance {padding-left: 10px; margin-right: 600px;}
+}
+    /*//Laptop M/L// */
 
 @media screen and (max-width: 1439px) and (min-width: 1224px) {
 
