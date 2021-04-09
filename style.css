@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
-    
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -78,7 +78,7 @@ figcaption {
         text-align: center;
         padding: 56.5px 20px 50px 20px;
         text-decoration: none;
-        font-size: 12pt;
+        font-size: 1.2em;
         letter-spacing: 0.5px;
         color: #000000;
     }
@@ -175,7 +175,7 @@ figcaption {
         border-radius: 15px;
         border: none;
         position: absolute;
-        left: 50vmax;
+        left: 55vmax;
         cursor: pointer;
         
     }
@@ -307,7 +307,7 @@ figcaption {
     }
     .caption_hebergements {
         padding: 0px 0px 2px 10px;
-        line-height: 1.4;
+        line-height: 1.3;
     }
     .figure_hebergements p {}
     /* --Afficher Plus--*/
@@ -356,6 +356,7 @@ figcaption {
         background-color: white;
         border-radius: 15px;
         box-shadow: 4px 2px 20px rgb(201, 201, 201);
+        position: relative;
     }
     .figure_populaires:hover {
         transform: scale(1.05);
@@ -368,18 +369,17 @@ figcaption {
         -o-object-fit: cover;
         object-fit: cover;
         float: left;
-        margin-right: 0.5vw;
+        padding-right: 5px;
     }
     .caption_populaires {
         padding-bottom: 5px;
-        position: relative;
     }
     .etoiles_populaires {    
-        bottom: 0.1vw;
+        bottom: 0.7vw;
         position: absolute;
     }
     #etoiles_populaires {
-        bottom: 0.1vw;
+        bottom: 0.7vw;
         position: absolute;
     }
     /* Section activités à Marseille */
@@ -537,9 +537,45 @@ figcaption {
 
 /* <--Laptop--> */
 
+/* //Laptop 4K// */
+
+@media screen and (min-width: 1441px) {
+    h1 {font-size: 2.5em}
+    h2 {font-size: 1.4vw;}
+    h3 {font-size: 1.3vw;}
+    p {font-size: 1.2vw;}
+    .marker {font-size: 1.2vw;}
+    .blue {font-size: 0.85vw ;}
+    .grey {font-size: 0.85vw ;}
+    .wrapper {padding: 0px 60px;}
+    .logo img { width: 200px;}
+    nav {margin-right: 0px;}
+    nav a {font-size: 2em; padding: 56.5px 50px 50px 20px;}
+    .barre_recherche {margin-top: 30px;}
+    .input {font-size: 2.2em; font-weight: 800;}
+    .close-btn {font-size: 2.2em; font-weight: 700;}
+    .filter_container {; padding-left: 40px;}
+    .fas_filter {font-size: 1.5vw;}
+    .info_icon {font-size: 1.5vw;}
+    .info p {line-height: 2.6}
+    article {margin-top:30px;}
+    #aside_1 {border-radius: 20px;}
+    .container_hebergements {padding-top: 30px;}
+    .image_hebergements {border-top-left-radius: 20px; border-top-right-radius: 20px; height: 8vw;}
+    #aside_2 {border-radius: 20px;}
+    #container_populaires {padding-top: 30px;}
+    .chart_icon {margin-top: 5px; font-size: 1vw;}
+    .figure_populaires {border-radius: 20px;}
+    .image_populaires { border-top-left-radius: 20px; border-bottom-left-radius: 20px; padding-right: 10px;}
+    .caption_populaires {padding-left: 5px; line-height: 1;}
+    .figcaption_activities {padding-left: 40px;}
+    footer li > a {font-size: 1.2vw; font-weight:500;}
+    .assistance {padding-left: 10px; margin-right: 600px;}
+}
+
 /*//Laptop M/L// */
 
-@media only screen and (max-width: 1439px) and (min-width: 1224px) {
+@media screen and (max-width: 1439px) and (min-width: 1224px) {
 
     /* General style elements */
     
@@ -557,7 +593,7 @@ figcaption {
 @media screen and (max-width: 1223px) and (min-width: 1024px) {
     h1 {font-size: 1.9vw;}
     h2 {font-size: 1.8vw;}
-    h3 {font-size: 1.16vw;}
+    h3 {font-size: 1.3vw;}
     p {font-size: 1.3vw;}
     .marker {font-size: 1.75vw;}
     .blue {font-size: 0.85vw ;}
@@ -566,13 +602,15 @@ figcaption {
     .input {font-size: 1.6vw;}
     .close-btn {font-size: 1.6vw;}
     article h2 {padding-top: 1vw;}
-    .filter_button i { width: 4vmax;
-                      height: 4vmax;}
+    .filter_button i { width: 4vmax; height: 4vmax;}
+    .info p { line-height: 2.1;}
     .figure_hebergements {height: 13.5vw;}
-    .figure_hebergements p {font-size: 1.1vw;}
-    .image_populaires {padding-right: 0px;}
+    .figure_hebergements p {font-size: 1.2vw;}
+    .image_populaires {padding-right: 5px;}
     .caption_populaires {padding-top: 0.2vw;}
-    .caption_populaires p {font-size: 1.1vw;}
+    .caption_populaires p {font-size: 1.2vw;}
+    .etoiles_populaires {margin-top: 25px; bottom: initial;}
+    #etoiles_populaires {margin-top: 25px; bottom: initial;}
     .figcaption_activities {padding-left: 1vw;}
     .apropos h3, .nos_hebergements h3, .assistance h3 {font-size: 1.4vw;}
     footer li > a {font-size: 1.4vw;}
@@ -585,37 +623,39 @@ figcaption {
     h1 {font-size: 2vmax;}
     h2 {font-size: 1.8vmax;}
     h3 {font-size: 1.3vmax;}
-    p {font-size: 1.3vmax;}
+    p {font-size: 1.7vmax;}
     .marker {font-size: 1.75vmax;}
-    .blue {font-size: 0.85vw ;}
-    .grey {font-size: 0.85vw ;}
+    .blue {font-size: 1.4vw ;}
+    .grey {font-size: 1.4vw ;}
     .wrapper {padding: 0px 30px;}
     .logo {margin-bottom: 0px;}
     nav {margin-right: 5px;}
-    nav a {font-size: 1.8vw;
-        padding: 56.5px 15px 50px 15px}
+    nav a {font-size: 1.8vw; padding: 56.5px 15px 50px 15px}
     .section_recherche {padding-top: 0px;}
     .input {font-size: 1.75vw;}
     .close-btn {font-size: 1.75vw;}
     article h2 {padding-top: 1.3vw;}
-    .filter_button i { width: 4vmax;
-                      height: 4vmax;}
+    .filter_button i { width: 4vmax;height: 4vmax;}
     .filter_button p {font-size: 1.5vw;}
     .info p {line-height: 2.3;}
-    #aside_2 {padding: 40px 20px 30px 20px; width: 33%;}
+    #section_hebergements {flex-flow: column-reverse; align-items: center}
+    #aside_2 {padding: 40px 20px 30px 20px; width: 100%;}
     .chart_icon {margin-top: 0px; font-size: 1.65vw;}
-    #container_populaires {justify-content: space-around;}
+    #container_populaires {display: flex; flex-direction: row; justify-content: space-around}
     .figure_populaires { display: block; width: 26vw; height: 19vw;}
     .image_populaires {border-radius: 10px 10px 0px 0px;width: 100%;height: 12vw;}
     .image_populaires {padding-right: 0px; margin-bottom: 2px;}
     .caption_populaires {padding-top: 0.2vw;}
-    .caption_populaires p {font-size: 1.3vw;}
-    .etoiles_populaires {margin-top: 0vw;}
-    #etoiles_populaires {margin-top: 0vw;}
-    #aside_1 {width: 65%}
+    .caption_populaires h3 {font-size:1.44vw;}
+    .caption_populaires p {font-size: 1.6vw;}
+    .etoiles_populaires {bottom: initial;}
+    #etoiles_populaires {bottom: initial;}
+    #aside_1 {margin: 20px 0px; width: 100%}
     .figure_hebergements {width: 26vw; height: 19vw;}
-    .figure_hebergements p {font-size: 1.3vw;}
+    .figure_hebergements h3 {font-size: 1.44vw;}
+    .figure_hebergements p {font-size: 1.6vw;}
     .image_hebergements {height: 12vw;}
+    .caption_hebergements h3 {line-height:1.1vw;}
     .figcaption_activities {padding-left: 10px;}
     .apropos h3, .nos_hebergements h3, .assistance h3 {font-size: 1.5vw;}
     footer li > a {font-size: 1.35vw;}
@@ -625,13 +665,13 @@ figcaption {
 /* //laptop S// */
 
 @media screen and (max-width: 867px) and (min-width: 768px) {
-    h1 {font-size: 2vmax;}
+    h1 {font-size: 2.5vmax;}
     h2 {font-size: 1.8vmax;}
     h3 {font-size: 1.3vmax;}
-    p {font-size: 1.3vmax;}
+    p {font-size: 1.5vmax;}
     .marker {font-size: 1.75vmax;}
-    .blue {font-size: 0.85vw ;}
-    .grey {font-size: 0.85vw ;}
+    .blue {font-size: 1.2vw ;}
+    .grey {font-size: 1.2vw ;}
     .wrapper {padding: 0px 30px;}
     .logo {margin-bottom: 0px;}
     nav {margin-right: 5px;}
@@ -644,27 +684,29 @@ figcaption {
     article h2 {padding-top: 1.3vw;}
     .filter_button i { width: 4vmax;
                       height: 4vmax;}
-    .filter_button p {font-size: 1.5vw; 
-        padding: 1.2vmax 1.4vmax 0.9vmax 1.4vmax;}
-    .info p {line-height: 3;}
-    #aside_2 {padding: 40px 20px 30px 20px; width: 33%;}
+    .filter_button p {font-size: 1.5vw;}
+    .info p {line-height: 2.6;}
+    #section_hebergements {flex-flow: column-reverse; align-items: center}
+    #aside_2 {padding: 40px 20px 30px 20px; width: 100%;}
     .chart_icon {margin-top: 0px; font-size: 1.65vw;}
-    #container_populaires {align-content: space-around;}
+    #container_populaires {display: flex; flex-direction: row; justify-content: space-around}
     .figure_populaires { display: block; width: 26vw; height: 19vw;}
     .image_populaires {border-radius: 10px 10px 0px 0px;width: 100%;height: 12vw;}
     .image_populaires {padding-right: 0px; margin-bottom: 2px;}
-    .caption_populaires {padding-top: 0.2vw;}
-    .caption_populaires p {font-size: 1.3vw;}
-    .etoiles_populaires {margin-top: 0vw;}
-    #etoiles_populaires {margin-top: 0vw;}
-    #aside_1 {width: 65%; padding-bottom: 20px;}
+    .caption_populaires {padding: 0px 0px 2px 10px;}
+    .caption_populaires p {font-size: 1.5vw;}
+    .etoiles_populaires {bottom:initial;}
+    #etoiles_populaires {bottom:initial;}
+    #aside_1 {margin: 20px 0px; width: 100%;}
     .container_hebergements {margin-bottom: 0px;}
     .figure_hebergements {width: 26vw; height: 19vw;}
-    .figure_hebergements p {font-size: 1.3vw;}
+    .figure_hebergements p {font-size: 1.5vw;}
     .image_hebergements {height: 12vw;}
+    .caption_hebergements {line-height: 1.2;}
+    .container_activites p {font-size:1.3vw;}
     .figcaption_activities {padding-left: 10px;}
     .apropos h3, .nos_hebergements h3, .assistance h3 {font-size: 1.5vw;}
-    footer li > a {font-size: 1.35vw;}
+    footer li > a {font-size: 1.5vw;}
     .assistance {padding-left: 20px; margin-right: 140px;}
 }
 
@@ -689,26 +731,28 @@ figcaption {
     .input {font-size: 2.4vw;}
     .close-btn {font-size: 2.4vw;}
     article h2 {padding-top: 1.3vw;}
+    .barre_recherche {margin-left: 110px;}
     .filter_container {flex-flow: wrap;}
     .filter_button i { width: 4.9vmax; height: 4.9vmax;}
     .filter_button p {font-weight: 600; font-size: 2.35vw; padding: 1vmax 1.6vmax 0.9vmax 1.6vmax;}
     .info p {line-height: 2.6;}
-    #aside_2 {padding: 20px 10px 10px 10px; width:100%;}
+    #aside_2 {padding: 20px 10px; width: 47.5%; height: 87vmax;}
     .chart_icon {margin-top: 5px; font-size: 2vw;}
-    #container_populaires {justify-content: space-around;}
-    .figure_populaires {display: block; height: 20.5vw; padding: 0.25em;}
+    #container_populaires {justify-content: center;}
+    .figure_populaires {display: block; width: 37vw; height: 20.5vw; padding: 0.25em;}
     .image_populaires {border-radius: 10px 10px 0px 0px; width: 100%;height: 12vw;}
     .image_populaires {padding-right: 0px; margin-bottom: 2px;}
-    .caption_populaires {padding-top: 0.2vw;}
-    .caption_populaires h3 {font-size:1.5vw;}
-    .caption_populaires p {font-size: 1.5vw; font-weight:500}
-    .etoiles_populaires {margin-top: 0vw;}
-    #etoiles_populaires {margin-top: 0vw;}
-    #aside_1 {width: 100%; margin-top: 20px; padding: 20px 10px;}
-    .container_hebergements {justify-content: space-between; margin-bottom: 0px;}
-    .figure_hebergements {width: 28vw; height: 20.5vw; padding: 0.25em;}
-    .caption_hebergements h3 {font-size:1.5vw;}
-    .caption_hebergements p {font-size: 1.5vw; font-weight:500}
+    .caption_populaires {padding-left:10px}
+    .caption_populaires h3 {font-size:1.8vw;}
+    .caption_populaires p {font-size: 1.8vw; font-weight:500}
+    .etoiles_populaires {bottom:initial}
+    #etoiles_populaires {bottom:initial}
+    #aside_1 {width: 47.5%; padding: 20px 10px;}
+    .container_hebergements {justify-content: center; margin-bottom: 0px;}
+    .figure_hebergements {width: 37vw; height: 20.5vw; padding: 0.25em;}
+    .caption_hebergements {line-height: 1;}
+    .caption_hebergements h3 {font-size:1.8vw;}
+    .caption_hebergements p {font-size: 1.8vw; font-weight:500}
     .image_hebergements {height: 12vw;}
     .figcaption_activities {padding-left: 15px;}
     .figcaption_activities p {font-size: 1.6vw;}
@@ -716,7 +760,7 @@ figcaption {
     .image_activites_b, .image_activites_c, .image_activites_d {height:70%; padding-bottom:0px}
     .apropos h3, .nos_hebergements h3, .assistance h3 {font-size: 2vw;}
     footer li > a {font-size: 1.5vw;}
-    .assistance {padding-left: 20px; margin-right: 70px;}
+    .assistance {padding-left: 20px; margin-right: 20px;}
 }
 
 /* //Tablet M// */
@@ -725,10 +769,10 @@ figcaption {
     h1 {font-size: 2.7vmax;}
     h2 {font-size: 2.6vmax;}
     h3 {font-size: 1.9vmax;}
-    p {font-size: 2vmax;}
+    p {font-size: 1.8vmax;}
     .marker {font-size: 2.5vmax;}
-    .blue {font-size: 1.3vw ;}
-    .grey {font-size: 1.3vw ;}
+    .blue {font-size: 1.9vw ;}
+    .grey {font-size: 1.9vw ;}
     .wrapper {padding: 0px 15px;}
     .logo {margin-bottom: 0px;}
     nav {margin-right: 5px;}
@@ -745,25 +789,25 @@ figcaption {
     .filter_button p {font-weight: 600; font-size: 2.35vw; padding: 1vmax 1.6vmax 0.9vmax 1.6vmax;}
     .fas_filter {font-size: 2vw;}
     .info_icon {font-size: 2vw; border: solid #f2f2f2 1px;}
-    .info p {line-height: 1.6}
-    #section_hebergements {flex-flow: column-reverse; align-items: center;}
-    #aside_2 {padding: 20px 10px 10px 10px; width:100%;}
-    .chart_icon {margin-top: 5px; font-size: 2vw;}
-    #container_populaires {display: flex; flex-direction: row; justify-content: space-between;}
-    .figure_populaires {display: block; width: 28vw; height: 24vw; padding: 0.25em;}
-    .image_populaires {border-radius: 10px 10px 0px 0px; width: 100%;height: 12.8vw;}
+    .info p {line-height: 2.3}
+    #aside_2 {padding: 20px 10px; width:47.5%; height: 80vmax;}
+    .chart_icon {margin-top: 3px; font-size: 2vw;}
+    #container_populaires {justify-content: center;}
+    .figure_populaires {display: block; width: 37vw; height: 24vw; padding: 0.25em;}
+    .image_populaires {border-radius: 10px 10px 0px 0px; width: 100%;height: 14vw;}
     .image_populaires {padding-right: 0px; margin-bottom: 2px;}
-    .caption_populaires {padding-top: 0.2vw; padding-left: 3px;}
-    .caption_populaires h3 {font-size:1.6vw;}
-    .caption_populaires p {font-size: 1.7vw; font-weight:500}
-    .etoiles_populaires {margin-top: 0vw;}
-    #etoiles_populaires {margin-top: 0vw;}
-    #aside_1 {width: 100%; margin-top: 20px; padding: 20px 10px;}
-    .container_hebergements {justify-content: space-between; margin-bottom: 0px;}
-    .figure_hebergements {width: 28vw; height: 24vw; padding: 0.25em;}
-    .caption_hebergements {padding-left: 3px;}
-    .caption_hebergements h3 {font-size:1.6vw;}
-    .caption_hebergements p {font-size: 1.7vw; font-weight:500}
+    .caption_populaires {padding-left: 5px; line-height: 1;}
+    .caption_populaires h3 {font-size: 1.9vw;}
+    .caption_populaires p {font-size: 1.9vw; font-weight:500}
+    .etoiles_populaires {bottom:initial}
+    #etoiles_populaires {bottom:initial}
+    #aside_1 {width: 47.5%; padding: 20px 10px;}
+    #aside_1 h2 {padding-left: 0px;}
+    .container_hebergements {justify-content: center; margin-bottom: 0px;}
+    .figure_hebergements {width: 37vw; height: 24vw; padding: 0.25em;}
+    .caption_hebergements {line-height: 1; padding: 0px 0px 2px 5px;}
+    .caption_hebergements h3 {font-size: 1.9vw;}
+    .caption_hebergements p {font-size: 1.9vw; font-weight:500}
     .image_hebergements {height: 14vw;}
     .figcaption_activities {padding-left: 15px;}
     .figcaption_activities p {font-size: 1.6vw;}
@@ -794,14 +838,14 @@ figcaption {
     .loupe {font-size: 12pt;}
     header {display: flex; flex-wrap:wrap; }
     .logo {left: 15px; top: 15px; position: absolute; padding: 0px; margin-top: 0px; margin-bottom: 0px;}
-    nav {display: flex; flex-wrap: wrap-reverse; justify-content: flex-end;margin-top: 15px; margin-right: 0px; border-radius: 0; background-color:rgba(255,255,255, 0);}
+    nav {display: flex; flex-wrap: wrap-reverse; justify-content: flex-end;margin-top: 15px; margin-right: 15px; border-radius: 0; background-color:rgba(255,255,255, 0);}
     nav a {padding: 15px 25px}
-    #active {flex-grow: 2; border-top: solid #ffffff; border-bottom: solid #0065fc; background-color:#ffffff;}
+    #active {flex-grow: 2;border-top: solid #ffffff; border-bottom: solid #0065fc; background-color:#ffffff);}
     #active:hover {background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid #0065fc;}
-    #non_active {flex-grow: 16; border-top: solid #ffffff; border-bottom: solid #ffffff;}
+    #non_active {flex-grow: 14; border-top: solid #ffffff; border-bottom: solid #ffffff);}
     #non_active:hover{background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid  #0065fc;}
-    #always_active {border-top: solid #ffffff; border-bottom: solid #ffffff; background-color: #ffffff;}
-    #always_active:hover {background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid  #0065fc;}
+    #always_active {border-top: solid #ffffff; border-bottom: solid #ffffff); background-color: #ffffff); }
+    #always_active:hover{background: #deebff; color: #0065fc; border-top: solid  #ffffff; border-bottom: solid  #0065fc;}
     main {padding: 0px; flex-direction: column; width: 100%; margin: 0;}
     .section_recherche {margin-top: 0px; padding: 30px 20px 0px 20px}
     .input {width: 250px;}
@@ -811,7 +855,7 @@ figcaption {
     .filter_button { margin-right: 0vw; border-width: 2px; border-radius: 15vw; margin: 5px}
     .icon_back {background-color: #deebff; width: 12.5vw; height: 12.5vw; border-radius: 50%;}
     .icon_back i { width: 12.5vw; height: 12.5vw; display: flex; justify-content: center; align-items: center; }
-    .filter_button p {padding: 1.5vw 2.5vw 1.5vw 2.5vw;}
+    .filter_button p {padding: 1.5vw 4vw 1.5vw 4vw;}
     .info_icon {margin-right: 4px;}
     .info p {padding-top: 4px; font-size: 8.5pt;}
     #section_hebergements { display: flex; flex-direction: column-reverse;}
@@ -822,8 +866,8 @@ figcaption {
     .figure_populaires {flex-basis : 80%; width: 345px; height: 160px;}
     .image_populaires {width: 155px; height:auto;}
     .caption_populaires {padding:5px}
-    .etoiles_populaires {margin-top: 48px;}
-    #etoiles_populaires {margin-top: 48px;}
+    .etoiles_populaires {padding-top: 45px; bottom: initial;}
+    #etoiles_populaires {padding-top: 45px; bottom: initial;}
     #aside_1 { background-color: #ffffff; border-radius: 0px; width: 100%; padding-top: 30px; padding-bottom: 20px;}
     #aside_1 h2 {font-size: 15pt;padding-left: 5px; padding-bottom: 15px;}.container_hebergements {display: flex;flex-direction: column; align-items: center;}
     .figure_hebergements {width: 345px; height: 200px;}
