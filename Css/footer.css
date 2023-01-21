@@ -1,0 +1,36 @@
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+}
+
+footer h3 {
+    font-size: 1.15em;
+    margin-bottom: 12.5px;
+}
+
+footer p {
+    font-size: 1.03em;
+    font-weight: 500;
+}
+
+footer ul {
+    padding: 0px 0px 40px 0px;
+}
+
+footer li > a {
+    line-height: 1.8;
+    color: #000000;
+}
+
+.apropos ul li:hover,
+.nos_hebergements ul li:hover,
+.assistance ul li:hover {
+    -webkit-text-stroke: 1px #000000;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 50px 25px;
+}
