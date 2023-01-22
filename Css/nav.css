@@ -1,55 +1,77 @@
 /* Nav */
 
-header {
-    width: 100%;
-    display: flex;
-    flex-wrap:wrap; 
-    justify-content: space-between;
-}
 
 .logo {
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: rgba(255,255,255, 0.9);
-    border-radius: 15px;
-    left: 15px; 
-    top: 15px; 
+    left: 22px; 
+    top: 26px; 
     position: absolute; 
     padding: 0px; 
 
 }
 
 nav {
-    float: right;
     margin-top: 15px;
-    overflow: hidden;
     align-items: center;
-    right: 0;
-    background-color: rgba(255,255,255, 0.9);
-    display: flex; 
-    flex-wrap: wrap-reverse; 
-    justify-content: flex-end; 
-    border-radius: 0; 
-    background-color:rgba(255,255,255, 0);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 nav a {
     float: left;
     text-align: center;
-    padding: 15px 25px;
     text-decoration: none;
     font-size: 1.1em;
     letter-spacing: 0.5px;
     color: #000000;
 }
 
-/* --Nav Buttons Hover & Actions-- */
+/* --Nav Buttons Style & Fx-- */
+
+nav p {
+    font-size: 0.9em;
+    letter-spacing: -0.02em;
+}
+
+
+/* btn S'Inscrire */
+
+#btn_subscribe {
+    align-self: flex-end;
+    color: #0065fc;
+    padding: 29px 20px 14px 15px;
+    border-bottom: solid #ffffff;
+}
+
+#btn_subscribe:hover {
+    border-bottom: solid #0065fc;
+    color: #000000; 
+}
+
+#btn_subscribe p {
+    font-size: 0.93em;
+    font-weight: 700;
+}
+
+
+#btn_section_nav  {
+    flex: 100%;
+    display: flex;
+    font-weight: 700;
+}
+
+#btn_section_nav p {
+    padding: 16px 0px 12px 0px;
+}
 
 /* btn Hébergements */
+
 #btn_accommodations {
+    flex: 2;
     color:#0065fc;
-    flex-grow: 2;
-    border-top: solid #ffffff; 
+    border-top: solid  #ffffff;
     border-bottom: solid #0065fc;
 }
 
@@ -61,10 +83,11 @@ nav a {
     border-bottom: solid #0065fc; 
 }
 
-/* btn Activités */
+/* btn activités */
+
 #btn_activities {
-    border-top: solid rgba(255,255,255, 0.9);
-    flex-grow: 10; 
+    flex: 2;
+    border-top: solid  #ffffff;
     border-top: solid #ffffff; 
     border-bottom: solid #f2f2f2;
 }
@@ -77,19 +100,4 @@ nav a {
     border-bottom: solid #0065fc;
 }
 
-/* btn S'Inscrire */
-#btn_subscribe {
-    color: #0065fc;
-    border-top: solid #ffffff;
-    font-weight: 800; 
-    border-bottom: solid #ffffff; 
-    background-color: #ffffff;
-}
 
-#btn_subscribe:hover {
-    background: #deebff; 
-    color: #0065fc; 
-    font-weight: 500;
-    border-top: solid  #ffffff; 
-    border-bottom: solid  #0065fc;
-}

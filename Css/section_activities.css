@@ -27,7 +27,7 @@
 
 .boxactivites_1 {
     display: flex;
-    width: 370px;
+    width: 350px;
     height: 190px;
     margin-bottom: 25px;
 }
@@ -35,14 +35,14 @@
 .boxactivites_2 {
     display: flex;
     flex-direction: column;
-    width: 370px; 
+    width: 350px; 
     margin-bottom: 25px;
 }
 
 .boxactivites_3 {
     display: flex;
     padding: 0;
-    width: 370px;
+    width: 350px;
     height: 190px;
     margin-bottom: 25px;
 }
@@ -50,7 +50,7 @@
 .boxactivites_4 {
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: 350px;
 }
 
 .container_activites figure {
@@ -60,21 +60,21 @@
 }
 
 .figure_activities_a {
-    width: 370px;
+    width: 350px;
     height: 190px;
 }
 
 .image_activites_a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 370px; 
+    width: 350px; 
     height: 135px;
     object-fit: cover;
     object-position: 100% 25%;
 }
 
 .figure_activities_b {
-    width: 370px; 
+    width: 350px; 
     height: 190px; 
     margin-bottom: 25px;
 }
@@ -82,28 +82,28 @@
 .image_activites_b {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 370px; 
+    width: 350px; 
     height: 135px;
     object-fit: cover;
     object-position: 100% 45%;
 }
 
 .figure_activities_c {
-    width: 370px; 
+    width: 350px; 
     height: 190px;
 }
 
 .image_activites_c {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 370px; 
+    width: 350px; 
     height: 135px;
     object-fit: cover;
     object-position: 100% 25%;
 }
 
 .figure_activities_d {
-    width: 370px; 
+    width: 350px; 
     height: 190px;
     margin-bottom: 25px;
 }
@@ -111,7 +111,7 @@
 .image_activites_d {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 370px; 
+    width: 350px; 
     height: 135px;
     object-fit: cover;
     object-position: 100% 27%;
@@ -120,7 +120,7 @@
 .image_activites_e {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 370px; 
+    width: 350px; 
     height: 135px;
     object-fit: cover;
     object-position: 100% 23%;
@@ -129,7 +129,7 @@
 .image_activites_f {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 370px; 
+    width: 350px; 
     height: 135px;
     object-fit: cover;
     object-position: 100% 28%;
