@@ -1,0 +1,95 @@
+/* Section activities */
+
+/* Main ELements */
+
+#section_activites {
+    display: block;
+    display: flex; 
+    flex-direction:column;
+}
+
+#section_activites h2 {
+    font-size: 1.35em; 
+    padding: 40px 0px 28px 22px;
+}
+
+#container_activites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+#container_activites figure:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+#container_activites figure {
+    width: 332px;
+    height: 190px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px 4px rgb(230, 230, 230);
+}
+
+#container_activites img {
+    width: 332px; 
+    height: 135px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+/* Invisible grid */
+
+.box {
+    margin-bottom: 23px;
+}
+
+/* Figures */
+
+#figure_activities_b {
+    margin-bottom: 23px;
+}
+
+#figure_activities_e {
+    margin-bottom: 23px;
+}
+
+/* Images */
+
+#image_activites_a {
+    object-position: 100% 16%;
+}
+
+#image_activites_b {
+    object-position: 100% 42%;
+}
+
+#image_activites_c {
+    object-position: 100% 17%;
+}
+
+#image_activites_d {
+    object-position: 100% 18%;
+}
+
+#image_activites_e {
+    object-position: 100% 23%;
+}
+
+#image_activites_f {
+    object-position: 100% 28%;
+}
+
+/* Caption */
+
+.figcaption_activities p {
+    font-size: 0.98em;
+    font-weight: 800;
+    letter-spacing: -1;
+    padding: 15px 0px 25px 20px;
+}
+
+.figcaption_activities p:hover{
+    color: #0065FC;
+}

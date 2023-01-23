@@ -1,7 +1,15 @@
 /* Footer */
 
+/* Main Elements */
+
 footer {
     background-color: #F2F2F2;
+}
+
+#container_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 50px 25px;
 }
 
 footer h3 {
@@ -14,6 +22,8 @@ footer p {
     font-weight: 500;
 }
 
+/* Link List */
+
 footer ul {
     padding: 0px 0px 40px 0px;
 }
@@ -23,14 +33,9 @@ footer li > a {
     color: #000000;
 }
 
-.apropos ul li:hover,
-.nos_hebergements ul li:hover,
-.assistance ul li:hover {
+/* Link Hover Fx */
+
+.link_group ul li:hover {
     -webkit-text-stroke: 1px #000000;
 }
 
-.container_footer {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0px 50px 25px;
-}

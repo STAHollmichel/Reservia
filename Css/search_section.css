@@ -1,4 +1,5 @@
 /* Search section */
+
 article {
     display: flex;
     flex-direction: column;
@@ -8,25 +9,25 @@ article h1, p {
     letter-spacing: -0.01em;
 }
 
-.accomodation_intro{
+#accomodation_intro{
     padding-right: 30px;
     line-height: 3em;
 }
 
-.section_recherche {
+#section_recherche {
     margin-top: 0px;
     padding: 32px 22px 0px 22px;
 }
 
 /* Search Bar */
 
-.barre_recherche {
+#barre_recherche {
     display: flex;
     margin-top: 22px;
     margin-bottom: 20px;
 }
 
-.map_marker {
+#map_marker {
     min-width: 52px;
     min-height: 50px;
     display: flex;
@@ -57,8 +58,8 @@ article h1, p {
     opacity: 1;
   }
 
-
 #btn_search_icon {
+    position: absolute;
     width: 50px;
     height: 50px;
     background-color: #0065fc;
@@ -68,7 +69,6 @@ article h1, p {
     color: white;
     border-radius: 15px;
     border: none;
-    position: absolute;
     right: 22px;
     cursor: pointer;
 }
@@ -81,12 +81,14 @@ article h1, p {
     color:#000000;
 }
 
-.close-btn {
+#btn_search {
     display: none;
-    padding: 10px;
+    position: absolute;
+    left: 300px;
     font-weight: 600;
-    font-size: 1.3em;
-    padding: 10px 15px;
+    font-size: 1.1em;
+    height: 50px;
+    padding: 0px 20px;
     border-radius: 0px 15px 15px 0px;
     border: none;
     color: #ffffff;
@@ -94,7 +96,7 @@ article h1, p {
     cursor: pointer;
 }
 
-.close-btn:hover {
+#btn_search:hover {
     color:#000000;
 }
 
@@ -108,7 +110,7 @@ article h1, p {
     font-weight: 700;
 }
 
-.filter_container {
+#filter_container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
@@ -159,12 +161,12 @@ article h1, p {
 
 /* --Partie info-- */
 
-.info {
+#info {
     padding: 10px 22px 40px 22px;
     
 }
 
-.info_icon {
+#info_icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,8 +183,7 @@ article h1, p {
     font-size: 0.75em;
 }
 
-
-.info p {
+#info p {
     padding-top: 3px;
     line-height: 1.2;
     font-size: 1em;

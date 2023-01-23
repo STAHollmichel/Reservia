@@ -8,19 +8,20 @@
     <!-- Css  -->
     <link rel="stylesheet" href="/Css/main_styles.css">
     <link rel="stylesheet" href="/Css/nav.css">
-    <link rel="stylesheet" href="/Css/section_search.css">
-    <link rel="stylesheet" href="/Css/section_accommodations.css">
-    <link rel="stylesheet" href="/Css/section_activities.css">
+    <link rel="stylesheet" href="/Css/search_section.css">
+    <link rel="stylesheet" href="/Css/accommodations_section.css">
+    <link rel="stylesheet" href="/Css/activities_section.css">
     <link rel="stylesheet" href="/Css/footer.css">
+    <link rel="stylesheet" href="/Css/media_queries.css">
 <!-- Fontawesome icon kit -->
     <script src="https://kit.fontawesome.com/ed2dfb15e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- Wrapper -->
-    <div class="wrapper">
+    <div id="wrapper">
 <!-- Nav -->
         <header>
-            <div class="logo">
+            <div id="logo">
                 <a href="index.html">
                     <img src="images/logo/Reservia.svg" alt="logo">
                 </a>
@@ -41,27 +42,27 @@
         </header>
 <!-- Main  -->
         <main>           
-<!-- Section de Recherche -->           
-            <div class="section_recherche"> 
-                <article class="accomodation_intro">
+<!-- Search Section -->           
+            <div id="section_recherche"> 
+                <article id="accomodation_intro">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </article>
                 <!--Search bar-->
-                <div class="barre_recherche">
-                    <span class="map_marker">
+                <div id="barre_recherche">
+                    <span id="map_marker">
                         <i class="fas fa-map-marker-alt marker"></i>
                     </span>
                     <input type="text" placeholder="Marseille, France" class="input">
-                    <button id="btn_search_icon" type="button" value="Rechercher">
+                    <button  type="button" value="Rechercher" id="btn_search_icon">
                         <i class="fas fa-search loupe"></i>
                     </button>
-                    <input type="button" value="Rechercher" class="close-btn">
+                    <input type="button" value="Rechercher" id="btn_search">
                 </div>
                 <!-- Filters -->
                 <div id="filter_section">
                     <h2>Filtres</h2>
-                    <div class="filter_container">
+                    <div id="filter_container">
                         <a href="#economique">
                             <div class="filter_button">
                                 <div class="icon_back">
@@ -97,8 +98,8 @@
                     </div>          
                 </div>
             </div>
-            <div class="info">
-                <span class="info_icon"><i class="fas fa-info icon"></i></span>
+            <div id="info">
+                <span id="info_icon"><i class="fas fa-info icon"></i></span>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 <!-- Accommodations's Section -->
@@ -107,7 +108,7 @@
                 <aside>
                     <div id="head_Populaires">
                         <h2>Les plus populaires</h2>
-                        <div class="chart_icon">
+                        <div id="chart_icon">
                             <i class=" fas fa-chart-line fa-lg icon"></i>
                         </div>
                     </div>
@@ -175,10 +176,10 @@
                     </a>
                     </div>    
                 </aside>
-                <!-- Accomodation_main -->
+                <!-- Accomodation's Main -->
                 <div id="accommodation_marseille">
                     <h2>Hébergements à Marseille</h2>
-                    <div class="container_hebergements">
+                    <div id="container_hebergements">
                         <a href="#aubergelacannebiere">
                             <figure class="figure_hebergements">
                                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
@@ -289,7 +290,7 @@
                         </a> 
                     </div>  
                     <a href="#afficher_plus" id="plusderesultats">
-                        <p class="btn_afficher_plus">Afficher plus</p>
+                        <p id="btn_afficher_plus">Afficher plus</p>
                     </a> 
                 </div>
 
@@ -297,68 +298,69 @@
 <!-- Activities Section -->
             <div id="section_activites">
                 <h2>Activités à Marseille</h2>
-                <div class="container_activites">
-                    <div class="boxactivites_1">
+                <div id="container_activites">
+                    <div class="box"id="box_activites_1">
                         <a href="#vieuxport">
-                            <figure class="figure_activities_a">
+                            <figure id="figure_activities_a">
                                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
                                     alt="Fort de Pomègues" 
-                                    class="image_activites_a">
+                                    id="image_activites_a">
                                 <figcaption class="figcaption_activities">
                                     <p>Vieux Port</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
-                    <div class="boxactivites_2">
+                    <div class="box"id="box_activites_2">
                         <a href="#fortdepomegues">
-                            <figure class="figure_activities_b">
+                            <figure id="figure_activities_b">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
                                     alt="Fort de Pomègues" 
-                                    class="image_activites_b">
+                                    id="image_activites_b">
                                 <figcaption class="figcaption_activities">
                                     <p>Fort de Pomègues</p>
                                 </figcaption>
                             </figure>
                         </a>
                         <a href="#ilesdufrioul">
-                            <figure class="figure_activities_c">
+                            <figure id="figure_activities_c">
                                 <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
                                     alt="Fort de Pomègues" 
-                                    class="image_activites_c">
+                                    id="image_activites_c">
                                 <figcaption class="figcaption_activities">
                                     <p>Îles du Frioul</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
-                    <div class="boxactivites_3">
+                    <div class="box"id="box_activites_3">
                         <a href="#parcnationaldescalanques">
-                            <figure class="figure_activities_a">
+                            <figure id="figure_activities_">
                                 <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
                                     alt="Fort de Pomègues" 
-                                    class="image_activites_d">
+                                    id="image_activites_d">
                                 <figcaption class="figcaption_activities">
                                     <p>Parc National des Calanques</p>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
-                    <div class="boxactivites_4">
+                    <div class="box"id="box_activites_4">
                         <a href="#notredamedelagarde">
-                            <figure class="figure_activities_d">
+                            <figure id="figure_activities_e">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
                                     alt="Fort de Pomègues" 
-                                    class="image_activites_e">
+                                    id="image_activites_e">
                                 <figcaption class="figcaption_activities">
                                     <p>Notre-Dame-de-la-Garde</p>
                                 </figcaption>
                             </figure>
                         </a> 
                         <a href="#longchamp">      
-                            <figure class="figure_activities_d">
+                            <figure id="figure_activities_f">
                                 <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
-                                    alt="Fort de Pomègues" class="image_activites_f">
+                                    alt="Fort de Pomègues" 
+                                    id="image_activites_f">
                                 <figcaption class="figcaption_activities">
                                     <p>Parc Longchamp</p>
                                 </figcaption>
@@ -372,8 +374,8 @@
     </div> 
 <!-- Footer -->
     <footer>
-        <div class="container_footer">
-            <div class="apropos">
+        <div id="container_footer">
+            <div class="link_group">
                 <h3>A propos</h3>
                     <ul>
                         <li>
@@ -393,7 +395,7 @@
                         </li>
                     </ul>
             </div>
-            <div class="nos_hebergements">
+            <div class="link_group">
                 <h3>Nos hébergements</h3>
                     <ul>
                         <li>
@@ -408,7 +410,7 @@
                         </li>
                     </ul>
             </div>
-            <div class="assistance">
+            <div class="link_group">
                 <h3>Assistance</h3>
                     <ul>
                         <li>

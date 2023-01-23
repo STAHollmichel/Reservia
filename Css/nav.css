@@ -1,18 +1,13 @@
 /* Nav */
 
 
-.logo {
-    margin-top: 0px;
-    margin-bottom: 0px;
+#logo {
     left: 22px; 
     top: 26px; 
-    position: absolute; 
-    padding: 0px; 
-
+    position: absolute;
 }
 
 nav {
-    margin-top: 15px;
     align-items: center;
     display: flex;
     justify-content: flex-end;
@@ -41,7 +36,7 @@ nav p {
 #btn_subscribe {
     align-self: flex-end;
     color: #0065fc;
-    padding: 29px 20px 14px 15px;
+    padding: 44px 20px 14px 15px;
     border-bottom: solid #ffffff;
 }
 
@@ -55,6 +50,7 @@ nav p {
     font-weight: 700;
 }
 
+/* Nav Grouped Btns */
 
 #btn_section_nav  {
     flex: 100%;
